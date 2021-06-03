@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "name": "book1",
+      "img_url": "./assets/images/products/b1.jpg",
+      "prix": "23",
+      "category": "BOOKS",
+      "id": 1
+    },
+    {
+      "name": "book2",
+      "img_url": "./assets/images/products/b2.jpg",
+      "prix": "13",
+      "category": "books",
+      "id": 2
+    },
+    {
+      "name": "book3",
+      "img_url": "./assets/images/products/b3.jpg",
+      "prix": "33",
+      "category": "BOOKS",
+      "id": 3
+    },
+    {
+      "name": "Collections of books",
+      "img_url": "./assets/images/products/b4.jpg",
+      "prix": "54",
+      "category": "BOOKS",
+      "id": 4
+    },
+    {
+      "name": "watch1",
+      "img_url": "./assets/images/products/w1.jpg",
+      "prix": "128",
+      "category": "Watches",
+      "id": 5
+    },
+    {
+      "name": "watch2",
+      "img_url": "./assets/images/products/w2.png",
+      "prix": "260",
+      "category": "watches",
+      "id": 6
+    },
+    {
+      "name": "pc1",
+      "img_url": "./assets/images/products/assus.jpg",
+      "prix": "1200",
+      "category": "PC",
+      "id": 7
+    },
+    {
+      "name": "pc2",
+      "img_url": "./assets/images/products/ASSUS2.jpg",
+      "prix": "2239",
+      "category": "PC",
+      "id": 8
+    }
+  ]
+}

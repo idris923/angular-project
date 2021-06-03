@@ -1,0 +1,50 @@
+<form [formGroup]="add">
+    <div class="form-groupe-row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input  type="text" class="form-control" id="na" placeholder="Name" formControlName="name" required >
+            <small class="text-danger" *ngIf="add.get('name')!.hasError('required')">
+                this field is required.
+           </small>
+           <small class="text-danger" *ngIf="add.get('name')!.hasError('minlength')">
+               the minimum lenght for this fields is 3 characters
+            </small>
+            <small class="text-danger" *ngIf="add.get('name')!.hasError('maxlength')">
+                the maximum lenght for this fields is30characters.
+            </small>
+        </div>
+    </div>
+
+    <div class="form-groupe-row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Image_url</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" formControlName="img_url" > 
+            <small class="text-danger" *ngIf="add.get('img_url')!.hasError('required')">
+                this field is required.
+           </small>
+        </div>
+    </div>
+
+    <div class="form-groupe-row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Price</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="Country" formControlName="prix" > 
+        </div>
+    </div>
+
+     <div class="form-groupe-row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Category</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="Category" formControlName="category" >
+        </div>
+    </div>
+
+    <div class="form-groupe-row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" (click)="onadd()"  >Add Product</button> 
+        </div>
+    </div>
+</form>
+
+
+    

@@ -1,0 +1,25 @@
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name </th>
+            <th scope="col">Image</th>
+            <th scope="col">Price</th>
+            <th scope="col">Category</th>
+            <th scope="col"><button class="btn btn-primary" routerLink="/add">Add</button></th>
+
+           
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; index as i">
+            <th scope="row">{{product.id}}</th>
+            <td>{{product.name}}</td>
+            <td>{{product.img_url}}</td>
+            <td>{{product.prix}}</td>
+            <td>{{product.category}}</td>
+
+        </tr>
+    </tbody>
+</table>
